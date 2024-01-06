@@ -1,10 +1,10 @@
 <?php
 
     //Variabel database atau inisialisasi parameter database
-    $servername = "atom.inst2019.com";
-    $username = "inst4770_ozan";
-    $password = "NoPassPlease";
-    $dbname = "inst4770_ozan";
+    $servername = "nama_server";
+    $username = "username";
+    $password = "pass";
+    $dbname = "nama_db";
    
     // Menghubungkan ke database
     $conn = mysqli_connect("$servername", "$username", "$password","$dbname");
@@ -13,7 +13,7 @@
         $username=$_POST['userName'];
         $password=$_POST['password'];
 
-        $query = mysqli_query($conn, "SELECT * FROM tb_user WHERE username='$username'");
+        $query = mysqli_query($conn, "SELECT * FROM tabelnya WHERE username='$username'");
         $data = mysqli_fetch_array($query);
 
         if (mysqli_num_rows($query) == 1) {
