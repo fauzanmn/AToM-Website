@@ -143,10 +143,10 @@
                         <tbody>
                             <?php
                             // Koneksi ke database
-							$servername = "atom.inst19.com";
-							$username = "inst4770_ozan";
-							$password = "NoPassPlease";
-							$dbname = "inst4770_ozan";
+							$servername = "nama_server";
+							    $username = "username";
+							    $password = "pass";
+							    $dbname = "nama_db";
 							
 							$connection = mysqli_connect($servername, $username, $password, $dbname);
 							 if (!$connection) {
